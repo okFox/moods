@@ -5,8 +5,7 @@ import {
   STUDY
 } from '../actions/moodActions';
 
-
-export default function useReducer(state, action) {
+export default function reducer(state, action) {
   switch(action.type) {
     case DRINK_COFFEE:
       return { ...state, coffees: state.coffees + 1 };
@@ -20,3 +19,4 @@ export default function useReducer(state, action) {
       return state;
   }
 }
+
